@@ -20,6 +20,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextViewController = segue.destination as! StarViewController
+        //used to be segue.destinationViewController
+        let button = sender as! UIButton
+        nextViewController.title = button.currentTitle
+        if segue.identifier == "BlueStarSegue"
+        {
+            nextViewController.isBlueStar = true
+        }
+        else
+        {
+            nextViewController.isBlueStar = false
+        }
+    }
+    
 }
 

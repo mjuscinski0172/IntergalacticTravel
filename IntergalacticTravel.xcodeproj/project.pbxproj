@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D776FB531DCB933600691151 /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D776FB521DCB933600691151 /* StarViewController.swift */; };
 		D7D063C41DCA363400845D86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D063C31DCA363400845D86 /* AppDelegate.swift */; };
 		D7D063C61DCA363400845D86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D063C51DCA363400845D86 /* ViewController.swift */; };
 		D7D063C91DCA363400845D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D063C71DCA363400845D86 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D776FB521DCB933600691151 /* StarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarViewController.swift; sourceTree = "<group>"; };
 		D7D063C01DCA363400845D86 /* IntergalacticTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntergalacticTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D063C31DCA363400845D86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7D063C51DCA363400845D86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				D7D063C31DCA363400845D86 /* AppDelegate.swift */,
 				D7D063C51DCA363400845D86 /* ViewController.swift */,
 				D7D063C71DCA363400845D86 /* Main.storyboard */,
+				D776FB521DCB933600691151 /* StarViewController.swift */,
 				D7D063CA1DCA363400845D86 /* Assets.xcassets */,
 				D7D063CC1DCA363400845D86 /* LaunchScreen.storyboard */,
 				D7D063CF1DCA363400845D86 /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D063C61DCA363400845D86 /* ViewController.swift in Sources */,
+				D776FB531DCB933600691151 /* StarViewController.swift in Sources */,
 				D7D063C41DCA363400845D86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +268,7 @@
 				DEVELOPMENT_TEAM = 22L9R8NETM;
 				INFOPLIST_FILE = IntergalacticTravel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.jhhs.620172.IntergalacticTravel;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jhhs.IntergalacticTravel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -277,7 +281,7 @@
 				DEVELOPMENT_TEAM = 22L9R8NETM;
 				INFOPLIST_FILE = IntergalacticTravel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.jhhs.620172.IntergalacticTravel;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jhhs.IntergalacticTravel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,6 +306,7 @@
 				D7D063D41DCA363400845D86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

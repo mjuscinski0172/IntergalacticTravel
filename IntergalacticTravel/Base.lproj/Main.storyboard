@@ -1,26 +1,104 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="45A-Lw-6RZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Intergalactic Travel-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IntergalacticTravel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OG7-I2-Hhn">
+                                <state key="normal" title="Red Dwarf"/>
+                                <connections>
+                                    <segue destination="bDx-Qe-15m" kind="show" identifier="RedDwarfSegue" id="azn-nc-DrD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAR-ri-qDX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FWd-ew-Yx7"/>
+                                    <constraint firstAttribute="width" constant="63" id="XQR-jL-zVa"/>
+                                </constraints>
+                                <state key="normal" title="Blue Star"/>
+                                <connections>
+                                    <segue destination="bDx-Qe-15m" kind="show" identifier="BlueStarSegue" id="uqT-pl-mfG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OG7-I2-Hhn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="123" id="DQ2-E3-VTr"/>
+                            <constraint firstItem="iAR-ri-qDX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L6p-5E-lts"/>
+                            <constraint firstItem="iAR-ri-qDX" firstAttribute="top" secondItem="OG7-I2-Hhn" secondAttribute="bottom" constant="102" id="P4T-4v-SJ1"/>
+                            <constraint firstItem="OG7-I2-Hhn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="up8-Pe-1VV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Intergalactic Travel" id="89Y-iz-6ml"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="527" y="-530"/>
+        </scene>
+        <!--Star View Controller-->
+        <scene sceneID="G5K-mu-23m">
+            <objects>
+                <viewController id="bDx-Qe-15m" customClass="StarViewController" customModule="IntergalacticTravel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Q4-Z3-I6k"/>
+                        <viewControllerLayoutGuide type="bottom" id="8te-Lj-I6K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="41o-gM-u3f">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5IJ-HE-lxX"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5IJ-HE-lxX" secondAttribute="trailing" id="B9P-eK-K7f"/>
+                            <constraint firstItem="5IJ-HE-lxX" firstAttribute="top" secondItem="9Q4-Z3-I6k" secondAttribute="bottom" id="INj-Kb-xlW"/>
+                            <constraint firstItem="8te-Lj-I6K" firstAttribute="top" secondItem="5IJ-HE-lxX" secondAttribute="bottom" id="ui1-FH-KOM"/>
+                            <constraint firstItem="5IJ-HE-lxX" firstAttribute="leading" secondItem="41o-gM-u3f" secondAttribute="leading" id="xTn-1A-Hw0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="starImageView" destination="5IJ-HE-lxX" id="MUc-0H-Jcp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5x-jm-O6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1190.625" y="-530.2734375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m6y-S1-e1C">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="45A-Lw-6RZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hXy-Il-PPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7MG-O8-buw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQt-dO-JFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140.625" y="-530.2734375"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="uqT-pl-mfG"/>
+    </inferredMetricsTieBreakers>
 </document>
